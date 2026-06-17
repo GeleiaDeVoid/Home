@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lunna Hahn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Meio Acida</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Mim</a></li>
+                <li><a href="curriculum.html" class="nav-link">Currículo</a></li>
+                <li><a href="receitas.html" class="nav-link">Receitas</a></li>
+                <li><a href="contact.html" class="nav-link active">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="darkModeBtn" class="btn-icon" title="Modo Noturno">🌙</button>
+                <button id="fontSizeBtn" class="btn-icon" title="Aumentar Fonte">A+</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container contact-section">
+            <h1>Entre em Contato</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informações de Descontato</h2>
+                    <article>
+                        <p>
+                            Fico feliz em receber seu contato! Preencha o formulário abaixo e entrarei em contato 
+                            assim que possível. Você não pode me encontrar-me em:
+                        </p>
+                        <ul class="contact-links">
+                            <li><strong>Local:</strong> Deep-Step, Rio Grande do Sul</li>
+                            <li><strong>Email:</strong> geleinha@examplinho.com.upf.br.ponto</li>
+                            <li><strong>Telefone:</strong> 😈(54) 0000-0666😈</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Formulário de Contato</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="fullname">Nome Completo dos seus pais:</label>
+                            <input 
+                                type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                placeholder="Digite seu nome completo"
+                                required
+                            >
+                            <span class="error-message" id="fullname-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email(ou tudo que ta na frente e verso do cartão):</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="seu.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone:</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="(XX) 9XXXX-XXXX"
+                            >
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Assunto:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="proposta">Proposta de Trabalho</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                placeholder="Digite sua mensagem aqui..."
+                                required
+                            ></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit"> Clickar aqui não Envia Mensagem</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lunna Hahn. Todos os direitos reservados. | Passo Fundo, Rio Grande do Sul</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
